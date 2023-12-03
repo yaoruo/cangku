@@ -1,35 +1,87 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>文档标题</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<link rel="stylesheet" href="./css/jquery-ui.css"/>
+<link rel="stylesheet" href="./css/main.css"/>
+
+<title>江湖逍遥传</title>
 </head>
+
 <body>
-  <div  style="
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 40px;
-    ">
-    <img alt="刘亚炜" src="https://github.com/yaoruo/cangku/blob/main/tubiao.jpg" width="80px" height="80px">
+<div id="mud">
+	<marquee id="topmsg" width="100%" behavior="scroll">
+       
+	</marquee>
+  <div style="display:none;" id="top"></div> 
+
+ <div style="display:none;" id="chat">
+ <button id="cbt" onclick="write_sendchat()"></button>
+ </div> 
+  <div style="display:none;" id="chatbox"></div>
+  <div style="display:none;" id="tbar">
+	<div id="tmenu"></div>
+    <div id="here"></div>
+    
   </div>
-  <div style="
-   max-width:760px;
-   margin:30px auto;
-   padding:15px;
-   line-leight:1.7;
-       ">
-      <p>这里是正文</p>
-      <p>你可以随便写内容</p>
-      <p>也可以加图片，视频等标签</p>
+	<div style="display:none;" id="roomdsc"></div>
+	
+
+
+
+	 
+   
+	  
+      <div id="out"></div>
+    <div id="mleft">
+	<div style="float:left;margin-top: 10px;">这里有:</div> <div style="float:left" id="acts"></div>
+	
+      <div id="obj"></div>
+      <div id="leftcmds"></div>
+	 </div>
+      <div id="exits"></div>
+    <div id="mycmds">
+ 
+	</div>  
+
+      <div id="map"></div>
+
+  
+
+
+
+ 
+ 
+ <div id="abottom">
+
+ 
+  <div style="display:none;" id="menu"></div>
+ </div>
+  <div id="hudong"></div>
+  <div style="display:none;" id="buttombg">
+    <div id="chattop" style="width:100%;height:42px;border-bottom:2px solid #cab9b1;"></div>
+	<div id="chatpage" style="width:100%;height:88%;overflow: auto;"></div>
+	<div id="sendbox" style="width:100%;height:5%;border-top:2px solid #cab9b1;"></div>
   </div>
-  <div style="
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 40px;
-    font-size: 12px;
-    ">
-<p>版权所有：liuyawei.com</p>
-<a href="https://liuyawei.com">我的网站</p>
+  
+  <div style="display:none;" id="fightbg">
+   <!-- <div id="chatclose" style="width:100%;height:42px;border-bottom:2px solid #cab9b1;"></div>-->
+    <div id="fighttop" style="width:100%;">
+	 <div id="fightlist" style="width:100%;"></div>
+	</div>
+	<div id="fightpage" style="width:100%;height:50%;"></div>
+	<div id="fightme" style="width:100%;height:56px;border-bottom:2px solid #cab9b1;"></div>
+	<!--<div id="fightskill" style="width:100%;height:80px;border-top:2px solid #cab9b1;"></div>-->
+  </div>  
+  
+  
+  
+<!--  <div id="myright"> </div>-->
   </div>
+  <script src="./js/main.js" charset="utf-8"></script>
+  <script src="./js/button.js" charset="utf-8"></script>
+  <script src="./js/ansi_up.js""></script>
 </body>
-</html>
